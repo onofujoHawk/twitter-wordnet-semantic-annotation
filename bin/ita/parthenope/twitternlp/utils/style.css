@@ -1,0 +1,10 @@
+node { text-size: 15px; stroke-mode: plain; padding: 3px, 2px; shape: rounded-box; size-mode: fit; text-color: white; }
+node.nodo_hashtag { fill-color: rgb(60, 179, 113); } 
+node.nodo_chiave { fill-color: rgb(255, 0, 0); } 
+node.nodo_ner { fill-color: rgb(255, 165, 0); } 
+node.nodo_textrank {  fill-color: rgb(238, 130, 238); } 
+node.nodo_iperonimo { fill-color: rgb(0, 0, 255); } 
+node.nodo_categoria { fill-color: rgb(0, 0, 0); } 
+node.nodo_overlap { fill-color: rgb(148, 0, 211); } 
+edge.arco_semplice { shape: line; fill-color: black; }
+edge.arco_tratteggiato { fill-color: rgb(0, 0, 0); stroke-mode: dots; stroke-width:1px; }

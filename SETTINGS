@@ -1,0 +1,32 @@
+Annotazione Semantica di conversazioni Twitter attraverso WordNet - Oct 2016
+-----------------------------------------------------------------------------------------
+
+Questo progetto di tesi sperimentale è stato sviluppato 
+su ambiente Eclipse MARS2, java version "1.8.0_73"
+Java(TM) SE Runtime Environment (build 1.8.0_73-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 25.73-b02, mixed mode).
+
+Per utilizzare il progetto, innanzitutto linkare le librerie presenti
+nella cartella "libs", quindi Properties -> Java Build Path -> Add external JAR's
+e selezionare tutte le librerie presenti in cartella. Fatto ciò bisogna scaricare
+ed installare WordNet 2.1 (Windows) o WordNet 3.1 (Linux) e cambiare i diversi percorsi
+al dizionario di WordNet presenti nelle classi WordNetDictionary e DatasetClustering
+di solito dopo l'installazione, WordNet è presente in C:/Program Files/WordNet.
+Nel classpath è presente il codice sorgente completo dello Stanford NER aggiornato 
+all'ultima versione, in caso potesse servire. Nella cartella "script" sono presenti
+degli script .sql per la creazione delle tre tabelle utilizzate da quest'applicazione.
+
+Il software è stato sviluppato su due modalità:
+       1) costruzione del grafo semantico per data parola chiave.
+       2) streaming dei dataset dall'API e salvataggio nel database.
+       
+La scelta iniziale è stabilita dall'utente, sia per lo streaming dei dati da API
+cosi come per la modellazione della mappa semantica, se in quest'ultima, si inserisce
+una chiave per cui non esistono dataset, il programma termina.
+
+-----------------------------------------------------------------------------------------
+
+Developer: Onofrio Falco
+Matricola: 0124000241
+
+-----------------------------------------------------------------------------------------
